@@ -1,0 +1,89 @@
+.integration-speechToText-section {
+    height: 550px;
+    width: 60%;
+    margin: 0 auto;
+}
+.integration-speechToText-section .chat_user1_avatar {
+    background-image: url('https://ej2.syncfusion.com/angular/demos/assets/chat-ui/images/andrew.png');
+} 
+.integration-speechToText-section .e-footer-template {
+    width: 100%;
+}
+  
+.integration-speechToText-section .banner-info .e-listen-icon:before {
+    font-size: 35px;
+}
+  
+.integration-speechToText-section .banner-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 330px;
+    text-align: center;
+}
+  
+.integration-speechToText-section .e-footer-wrapper #chatui-sendButton {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+  
+.integration-speechToText-section .e-footer-wrapper #speechtotext.visible,
+.integration-speechToText-section .e-footer-wrapper #chatui-sendButton.visible {
+    display: inline-block;
+}
+  
+.integration-speechToText-section .e-footer-wrapper #speechtotext,
+.integration-speechToText-section .e-footer-wrapper #chatui-sendButton {
+    display: none;
+}
+  
+@media only screen and (max-width: 750px) {
+    .integration-speechToText-section {
+      width: 100%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .template-chatui {
+        width: 70%;
+    }
+    .template-chatui .message-suggestions {
+        flex-direction: column;
+        width: 80%;
+    }
+    .template-chatui .message-suggestions .suggestion-button {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+  
+.integration-speechToText-section .e-footer-wrapper {
+    display: flex;
+    border: 1px solid #c1c1c1;
+    padding: 5px 5px 5px 10px;
+    margin: 5px 5px 0 5px;
+    border-radius: 30px;
+}
+  
+.integration-speechToText-section .e-footer-wrapper .content-editor {
+    width: 100%;
+    overflow-y: auto;
+    font-size: 14px;
+    min-height: 25px;
+    max-height: 200px;
+    padding: 10px;
+    scrollbar-color: #c1c1c1 transparent;
+}
+  
+.integration-speechToText-section .e-footer-wrapper .content-editor[contentEditable=true]:empty:before {
+    content: attr(placeholder);
+}
+  
+.integration-speechToText-section .option-container {
+    align-self: flex-end;
+}
